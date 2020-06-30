@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "MÃ³dulo1"
 Public Sub getlabels()
     
     Application.ScreenUpdating = False
@@ -17,7 +17,7 @@ Public Sub getlabels()
     Set oFolder = oFSO.GetFolder(Application.ThisWorkbook.Path & "\base")
     Set oFiles = oFolder.Files
     
-    'Adicionando novas Sheets no baselabels de acordo com o número de arquivos na pasta
+    'Adicionando novas Sheets no baselabels de acordo com o nÃºmero de arquivos na pasta
     
     cont = 0
     qtd_arquivos = oFiles.Count - 1
@@ -34,7 +34,7 @@ Public Sub getlabels()
         Workbooks.Open (oFolder & "\" & file.Name)
         Set ws2 = Workbooks(file.Name).Sheets(1)
         
-    'Definindos Campos do arquivo aberto que devem ser extraídos do arquivos aberto
+    'Definindos Campos do arquivo aberto que devem ser extraÃ­dos 
         Application.ScreenUpdating = True
         
         tam_array = Application.InputBox("Enter the Number of Fields from target to be extracted", Type:=1)
